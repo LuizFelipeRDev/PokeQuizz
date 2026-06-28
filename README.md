@@ -4,7 +4,8 @@
   <img src="src/app/assets/pikachu.gif" alt="Pikachu" />
 </p>
 
-ACESSE: [Poké Quiz](https://poke-quizz-eta.vercel.app/)
+ACESSE: [Poké Quiz](https://poke-quizz-eta.vercel.app/)  
+<br>
 
 Um jogo de quiz sobre Pokemons desenvolvido com Next.js. Teste seus conhecimentos sobre os tipos de Pokemon e descubra novos.
 
