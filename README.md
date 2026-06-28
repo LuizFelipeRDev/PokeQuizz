@@ -15,7 +15,7 @@ Um jogo de quiz sobre Pokemons desenvolvido com Next.js. Teste seus conhecimento
 - Selecao de tipos de Pokemon para filtrar as perguntas
 - API propria que consome a PokeAPI para gerar perguntas
 - Interface com animacoes e efeitos typing
-- Escute Musicas da série enquanto tempa bater seu recorde
+- Escute Musicas da série enquanto tenta bater seu recorde
 
 ## Tecnologias
 
