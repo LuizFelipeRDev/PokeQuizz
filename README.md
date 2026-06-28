@@ -9,6 +9,8 @@ ACESSE: [Poké Quiz](https://poke-quizz-eta.vercel.app/)
 
 Um jogo de quiz sobre Pokemons desenvolvido com Next.js. Teste seus conhecimentos sobre os tipos de Pokemon e descubra novos.
 
+![alt text](print.png)
+
 ## Funcionalidades
 
 - Quiz com perguntas aleatorias sobre Pokemons
