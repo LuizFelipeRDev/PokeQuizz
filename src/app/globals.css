@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+:root {
+  --color-pulse: #2ff678;
+  --font-press-start-2p: 'Press Start 2P', cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
+body {
+  background: #0a0a0a;
+  color: #ffffff;
+  user-select: none;
+}
+
+.fontBits {
+  font-family: var(--font-press-start-2p);
+}
+
+/* ========================= Botão Bonito 3 ========================= */
+.btnBonito3 {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #F8FAB4;
+  color: black;
+  background-color: #FAEB92;
+  padding: 0.5rem 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.btnBonito3 span.texto {
+  position: relative;
+  z-index: 10;
+  color: inherit;
+  transition: color 0.5s ease;
+}
+
+.btnBonito3 span.bg-left,
+.btnBonito3 span.bg-right {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #22c55e;
+  top: 0;
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.btnBonito3 span.bg-left {
+  left: -13.75rem;
+}
+
+.btnBonito3 span.bg-right {
+  right: -13.75rem;
+}
+
+.btnBonito3:hover span.texto {
+  color: #ffffff;
+}
+
+.btnBonito3:hover span.bg-left,
+.btnBonito3:hover span.bg-right {
+  transform: rotate(0deg);
+  left: 0;
+  right: 0;
+}
+
+.btnBonito3:active {
+  transform: scale(0.95);
+}
+
+
+/* ========================= Pulse Loader ========================= */
+.loader {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-pulse);
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0 0 6px var(--color-pulse);
+}
+
+.loader::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--color-pulse);
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0.6;
+  animation: pulseGlow 1.5s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+    box-shadow: 0 0 8px var(--color-pulse);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.5);
+    opacity: 0;
+    box-shadow: 0 0 20px var(--color-pulse);
+  }
+}
+
+/* ========================= GlowPower ========================= */
+.GlowPower {
+  transition: 0.5s ease-in-out;
+  box-shadow: 0rem 2rem 3rem rgba(20, 143, 195, 0.8);
+}
+
+.GlowPower:hover {
+  box-shadow: 0rem 2rem 3rem rgba(24, 248, 114, 0.8);
+}
+
+/* ========================= Pokédex Animations ========================= */
+@keyframes bounce-pikachu {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+}
+
+.animate-bounce-pikachu {
+  animation: bounce-pikachu 1s infinite cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+
+@keyframes bounce-button {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.animate-bounce-button {
+  animation: bounce-button 1s infinite ease-in-out;
+}
+
+@keyframes bounce-rotate {
+  0% {
+    transform: translateX(-50%) translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    transform: translateX(-50%) translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  40% {
+    transform: translateX(-50%) translateY(-20px) rotate(6deg);
+    opacity: 1;
+  }
+  60% {
+    transform: translateX(-50%) translateY(-10px) rotate(-4deg);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(-50%) translateY(-15px) rotate(4deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-15px) rotate(0deg);
+    opacity: 0;
+  }
+}
+
+.animate-answer {
+  animation: bounce-rotate 1.5s ease forwards;
+}
+
+
+/* ========== Não apagar: espaço reservado ========== */
